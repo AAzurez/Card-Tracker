@@ -1,0 +1,9 @@
+Problem: 
+
+Backend API: Python (FastAPI)
+ML Pipeline: Python (scikit-learn)
+DB: PostgreSQL
+Frontend: React + TypeScript
+Background jobs: Celery + Redis
+
+Data Source: TCGPlayer API
