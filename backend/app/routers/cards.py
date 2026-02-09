@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from backend.app.data.cards import FAKE_CARDS
 
 router = APIRouter(
-    prefix="",
+    prefix="/card",
     tags=["cards"],
 )
 
