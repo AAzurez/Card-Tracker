@@ -11,16 +11,16 @@ def get_all_product():
     return FAKE_PRODUCTS
     
 
-@router.get("/{product}")
-def get_specific_product(name_product: str):
+@router.get("/{product_name}")
+def get_specific_product(product_name: str):
     for product in FAKE_PRODUCTS:
-        if card["name"] == name_product:
+        if product["name"] == product_name:
             return product
 
-    if not name_product:
+    if not product_name:
         raise HTTPException(status_code=404, detail="Box not found")
     
-@router.get("/sets/{product}")
+@router.get("/box/{box_type}")
 def get_set(box_type: str):
 
     products = []
