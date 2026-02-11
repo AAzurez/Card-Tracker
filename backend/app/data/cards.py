@@ -38,7 +38,7 @@ FAKE_CARDS = [
         "rarity": "Holo Rare",
         "graded": False,
         "prices": {
-            "2024-01-01": 10.0
+            "2024-01-01": 1000.0
         }
     }
 ]
