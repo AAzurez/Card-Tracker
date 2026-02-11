@@ -30,3 +30,17 @@ def get_set(card_set: str):
         raise HTTPException(status_code=404, detail="Set not found")
 
     return cards_in_set
+
+@router.get("/grade/{graded_card}")
+def get_grade(graded_card: str):
+
+    cards_graded = []
+
+    for card in FAKE_CARDS:
+        if card["graded"] == True:
+            cards_graded.append(card)
+
+    if not cards_graded:
+        raise HTTPException(status_code=404, detail="Set not found")
+
+    return cards_graded
